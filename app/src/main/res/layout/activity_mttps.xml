@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mttps.mttpsgoldenjubilee.MTTPS"
+    android:background="@drawable/BG4"
+    android:touchscreenBlocksFocus="false">
+    <CheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/model_town_tagore_park_puja_samiti"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="50dp"
+        android:typeface="serif"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Member Registration"
+        android:id="@+id/bMemReg"
+        android:background="#da4b55"
+        android:textColor="#fefcfc"
+        android:typeface="normal"
+        android:textSize="16dp"
+        android:clickable="true"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photo Gallery"
+        android:id="@+id/bGallery"
+        android:background="#da4b55"
+        android:textColor="#fefcfc"
+        android:clickable="true"
+        android:layout_above="@+id/bCalendar"
+        android:layout_alignStart="@+id/bMemReg"
+        android:layout_marginBottom="39dp"
+        android:layout_alignEnd="@+id/bMemReg" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puja Calendar"
+        android:id="@+id/bCalendar"
+        android:background="#da4b55"
+        android:textColor="#fefcfc"
+        android:clickable="true"
+        android:layout_above="@+id/bFinance"
+        android:layout_alignStart="@+id/bGallery"
+        android:layout_marginBottom="40dp"
+        android:layout_alignEnd="@+id/bGallery" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donation"
+        android:id="@+id/bFinance"
+        android:background="#da4b55"
+        android:textColor="#fefcfc"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/bCalendar"
+        android:layout_marginBottom="58dp"
+        android:layout_alignEnd="@+id/bCalendar" />
+
+</RelativeLayout>
